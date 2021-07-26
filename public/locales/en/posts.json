@@ -1,0 +1,15 @@
+{
+    "Posts":"Posts",
+    "PostWithCount": "Total Post:{{count}}",
+    "PostWithCount_plural": "Total Posts:{{count}}",
+    "AddPost" : {
+        "AddPost": "Add Post",
+        "Title": "Title:",
+        "Users": "Users:",
+        "Content": "Content:",
+        "SavePost": "Save Post"
+    },
+    "EditPost":{
+        "LastModified": "Last modified at {{date,LLL}}"
+    }
+}

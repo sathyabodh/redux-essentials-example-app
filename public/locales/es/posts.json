@@ -1,0 +1,15 @@
+{
+    "Posts":"Publicaciones",
+    "PostWithCount": "Publicación total:{{count}}",
+    "PostWithCount_plural": "Publicaciones totales:{{count}}",
+    "AddPost" : {
+        "AddPost": "Agregar publicación",
+        "Title": "Título:",
+        "Users": "Usuarios:",
+        "Content": "Contenido:",
+        "SavePost": "Guardar publicación"
+    },
+    "EditPost":{
+        "LastModified": "Última modificación a las {{date,LLL}}"
+    }
+}

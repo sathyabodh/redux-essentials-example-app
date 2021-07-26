@@ -1,0 +1,7 @@
+{
+    "Hello": "Myname",
+    "Notification":{
+        "newNotification": "{{count}} new Notifications",
+        "newNotification_interval":"(1)[There is One new notification];(2-5)[There are few new notification];(5-inf)[There are lot of new notification];"
+    }
+}

@@ -61,6 +61,7 @@ const notificationTemplates = [
   `is glad we're friends`,
   'sent you a gift',
 ]
+const pattern = new RegExp('^/locales/')
 
 new Server({
   routes() {
@@ -72,7 +73,17 @@ new Server({
     this.resource('comments')
 
     const server = this
+    this.passthrough(request => {
+      // console.log(`${request.url}`)
+      //if(request.url === '/locales/en/translation.json'){
+        if(pattern.test(request.url)){
+        // console.log(`matched ${request.url}`)
+        return true
+      }
+      return false;
+    });
 
+  
     this.post('/posts', function (schema, req) {
       const data = this.normalizedRequestAttrs()
       data.date = new Date().toISOString()

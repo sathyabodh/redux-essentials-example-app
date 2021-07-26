@@ -6,6 +6,11 @@ import store from './app/store'
 import { Provider } from 'react-redux'
 
 import './api/server'
+import { fetchUsers } from './app/features/users/userSlice'
+
+import i18n from './i18n'
+
+store.dispatch(fetchUsers())
 
 ReactDOM.render(
   <React.StrictMode>
