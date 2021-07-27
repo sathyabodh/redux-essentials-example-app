@@ -117,3 +117,9 @@ Below hooks are used
    2. Return the clean up function as part of useEffect to run the clean up when required. Either due to component un mount or part of next component did update lifecycle
    3. Pass empty list of dependency array for the last arugment to make the function run for Component mounted / component will un mount lifecyle exlcuding component did upate lifecyle. Empty list means there is no depednecy on the any props, state
    4. Always use function which uses props / state inside this hook as it will bind to correct version of the props / state 
+   - - - -
+
+### Pending Tasks
+   - [ ]Currently redux store code is not split according to module. All the reducers / actions are loaded together insted when required
+   - [ ]Learn Server side rendering for this app
+   - [ ]Progressive App ????
